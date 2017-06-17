@@ -23,6 +23,15 @@
             </div>
 
         </div>
+        <div class="col-md-8 col-md-offset-2">
+            <dl class="dl-horizontal">
+                <dt>Age</dt>
+                <dd>${user.age}</dd>
+                <dt>Address</dt>
+                <dd>${user.address}</dd>
+            </dl>
+
+        </div>
     </div>
 </div>
      <!-- You can use the c:out if you really want to -->

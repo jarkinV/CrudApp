@@ -17,7 +17,7 @@ public enum UserDao {
             preparedStatement.setString(1, user.getName());
             preparedStatement.setInt(2, user.getAge());
             preparedStatement.setString(3, user.getAddress());
-            preparedStatement.setString(4, user.getPassword());
+            preparedStatement.setString(4, PasswordEncoder.INSTANCE.sha256(user.getPassword()));
             preparedStatement.setString(5, user.getLogin());
             return preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -52,7 +52,7 @@ public enum UserDao {
         try {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, login);
-            preparedStatement.setString(2, password);
+            preparedStatement.setString(2, PasswordEncoder.INSTANCE.sha256(password));
             user = getUserByResultSet(preparedStatement);
         } catch (SQLException e) {
             e.printStackTrace();
