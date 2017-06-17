@@ -2,6 +2,7 @@ package com.softserv.todolist.dto;
 
 
 public class UserDto {
+    private int userId;
     private String name;
     private int age;
     private String address;
@@ -9,10 +10,19 @@ public class UserDto {
     public UserDto() {
     }
 
-    public UserDto(String name, int age, String address) {
+    public UserDto(int userId, String name, int age, String address) {
+        this.userId = userId;
         this.name = name;
         this.age = age;
         this.address = address;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getName() {

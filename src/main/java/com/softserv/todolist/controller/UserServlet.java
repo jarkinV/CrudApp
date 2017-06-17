@@ -1,4 +1,4 @@
-package com.softserv.todolist.controllet;
+package com.softserv.todolist.controller;
 
 import com.softserv.todolist.dto.UserDto;
 

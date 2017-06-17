@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="677bf709-4c9d-4681-aaac-6786caf8db6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/target/CrudApp/WEB-INF/classes/com/softserv/todolist/controllet/WelcomeServlet.class" afterPath="$PROJECT_DIR$/../CrudApp/target/CrudApp/WEB-INF/classes/com/softserv/todolist/controllet/WelcomeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/target/CrudApp/WEB-INF/classes/com/softserv/todolist/dao/UserDao.class" afterPath="$PROJECT_DIR$/../CrudApp/target/CrudApp/WEB-INF/classes/com/softserv/todolist/dao/UserDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/target/classes/com/softserv/todolist/controllet/WelcomeServlet.class" afterPath="$PROJECT_DIR$/../CrudApp/target/classes/com/softserv/todolist/controllet/WelcomeServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/target/classes/com/softserv/todolist/dao/UserDao.class" afterPath="$PROJECT_DIR$/../CrudApp/target/classes/com/softserv/todolist/dao/UserDao.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../CrudApp/target/CrudApp/WEB-INF/classes/com/softserv/todolist/controllet/WelcomeServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../CrudApp/target/classes/com/softserv/todolist/controllet/WelcomeServlet.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../CrudApp/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/CrudApp.iml" afterPath="$PROJECT_DIR$/../CrudApp/CrudApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/LoginServlet.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/LoginServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/SignUpServlet.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/SignUpServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/WelcomeServlet.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/WelcomeServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dao/UserDao.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dto/UserDto.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dto/UserDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/src/main/webapp/header.jsp" afterPath="$PROJECT_DIR$/../CrudApp/src/main/webapp/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/src/main/webapp/signup.jsp" afterPath="$PROJECT_DIR$/../CrudApp/src/main/webapp/signup.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/src/main/webapp/welcome.jsp" afterPath="$PROJECT_DIR$/../CrudApp/src/main/webapp/welcome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CrudApp/target/CrudApp/welcome.jsp" afterPath="$PROJECT_DIR$/../CrudApp/target/CrudApp/welcome.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/LoginServlet.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/LoginServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/SignUpServlet.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/SignUpServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/UserServlet.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/UserServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/WelcomeServlet.java" afterPath="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/WelcomeServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../CrudApp/out/" />
     <ignored path="$PROJECT_DIR$/../CrudApp/target/" />
@@ -29,10 +25,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserFilter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="items.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/items.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFilter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/UserFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
+            <state relative-caret-position="286">
               <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -41,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/SignUpFilter.java">
+      <file leaf-file-name="ItemServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/ItemServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="32" selection-end-column="9" />
+            <state relative-caret-position="344">
+              <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,38 +59,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SignUpServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/SignUpServlet.java">
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/LoginServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginFilter.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/LoginFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="264">
+              <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,8 +76,8 @@
       <list>
         <option value="FxmlFile" />
         <option value="Tag Library Descriptor" />
-        <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -123,8 +103,6 @@
         <option value="$PROJECT_DIR$/../CrudApp/.gitignore" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/welcome.jsp" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dto/UserDto.java" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/WelcomeServlet.java" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/test.jsp" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/css/login.css" />
@@ -133,12 +111,22 @@
         <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/Servlet.java" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/UserServlet.java" />
-        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/user.jsp" />
-        <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/header.jsp" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/UserFilter.java" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/SignUpFilter.java" />
         <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/LoginFilter.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/entity/User.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/LogOutServlet.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/SignUpServlet.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/entity/Item.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dao/ItemDao.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/header.jsp" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/ItemServlet.java" />
+        <option value="$PROJECT_DIR$/../CrudApp/src/main/webapp/items.jsp" />
       </list>
     </option>
   </component>
@@ -458,7 +446,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllet" />
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1017,12 +1005,12 @@
       <option name="presentableId" value="Default" />
       <updated>1497644679656</updated>
       <workItem from="1497644684247" duration="13223000" />
-      <workItem from="1497693399489" duration="18210000" />
+      <workItem from="1497693399489" duration="24414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31433000" />
+    <option name="totallyTimeSpent" value="37637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1041,7 +1029,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21864952" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37191853" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1050,9 +1038,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24360341" sideWeight="0.59122086" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24360341" sideWeight="0.40877914" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12647374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21002132" sideWeight="0.7081911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21002132" sideWeight="0.29180887" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290461" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1123,7 +1111,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/WelcomeServlet.java">
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/WelcomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
@@ -1149,7 +1137,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/LoginServlet.java">
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/LoginServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="46" lean-forward="false" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
@@ -1159,7 +1147,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/SignUpServlet.java">
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/SignUpServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
           <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
@@ -1252,48 +1240,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1497707700302" expanded="true" signature="322:420" ph="Insert into user... " />
-            <marker date="1497707700302" expanded="true" signature="1178:1213" ph="Select * fro... User" />
-            <marker date="1497707700302" expanded="true" signature="1751:1802" ph="Select * fro... User" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#706#707#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -1318,88 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/signup.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/WelcomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/user.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="58" lean-forward="true" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/UserFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="48" column="40" lean-forward="false" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controllet/SignUpServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/SignUpFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -1414,6 +1278,174 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="33" column="9" lean-forward="false" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/LogOutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/SignUpServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/WelcomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/entity/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding>
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dao/ItemDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="747">
+          <caret line="40" column="67" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1497723964621" expanded="true" signature="409:485" ph="Insert into item... " />
+            <marker date="1497723964621" expanded="true" signature="1150:1168" ph="Select * fro... Item" />
+            <marker date="1497723964621" expanded="true" signature="1150:1185" ph="Select * fro... Item" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dto/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="70" lean-forward="false" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
+          <folding>
+            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="77" column="38" lean-forward="true" selection-start-line="77" selection-start-column="38" selection-end-line="77" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1497723780659" expanded="true" signature="322:420" ph="Insert into user... " />
+            <marker date="1497723780659" expanded="true" signature="1178:1213" ph="Select * fro... User" />
+            <marker date="1497723780659" expanded="true" signature="1751:1802" ph="Select * fro... User" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/signup.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/user.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/controller/ItemServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/webapp/items.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../CrudApp/src/main/java/com/softserv/todolist/filter/UserFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

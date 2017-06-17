@@ -76,7 +76,7 @@ public enum UserDao {
         try {
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                user.setUserId(resultSet.getInt("userId"));
+                user.setUserId(resultSet.getInt("userID"));
                 user.setName(resultSet.getString("name"));
                 user.setAge(resultSet.getInt("age"));
                 user.setAddress(resultSet.getString("address"));

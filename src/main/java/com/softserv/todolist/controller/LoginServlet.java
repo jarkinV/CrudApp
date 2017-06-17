@@ -1,4 +1,4 @@
-package com.softserv.todolist.controllet;
+package com.softserv.todolist.controller;
 
 import com.softserv.todolist.dao.UserDao;
 import com.softserv.todolist.dto.UserDto;
@@ -45,9 +45,9 @@ public class LoginServlet extends HttpServlet {
                 userDto.setName(user.getName());
                 userDto.setAge(user.getAge());
                 userDto.setAddress(user.getAddress());
+                userDto.setUserId(user.getUserId());
                 session.setAttribute("UserDto", userDto);
                 resp.sendRedirect("/user");
-//                req.getRequestDispatcher("/user").forward(req, resp);
 
             }
         }else {
