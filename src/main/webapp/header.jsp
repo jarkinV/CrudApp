@@ -9,6 +9,7 @@
                     ${user == null ? "" : "<li><a href=\"/items\">Items</a></li>"}
                     ${user == null ? "<li><a href=\"/login\">Sign in</a></li>" : ""}
                     ${user == null ? "<li><a href=\"/signup\">Sign up</a></li>" : ""}
+                    ${user.role == "Role_admin" ? "<li><a href=\"/manage\">Users</a></li>" : ""}
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     ${user == null ? "" : "<li><a href=\"/logout\">Log out</a></li>"}

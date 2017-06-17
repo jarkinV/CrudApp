@@ -46,6 +46,8 @@ public class LoginServlet extends HttpServlet {
                 userDto.setAge(user.getAge());
                 userDto.setAddress(user.getAddress());
                 userDto.setUserId(user.getUserId());
+                userDto.setRole(user.getRole());
+                userDto.setLogin(user.getLogin());
                 session.setAttribute("UserDto", userDto);
                 resp.sendRedirect("/user");
 
