@@ -25,12 +25,13 @@
                     <th>State</th>
                     <th>Delete</th>
                 </tr>
+
                 <c:forEach items="${list}" var="item" >
-                    <tr>
-                        <td>${item.text}</td>
-                        <td>${item.state?"✔":""}</td>
-                        <td>delete</td>
-                    </tr>
+                <tr>
+                <td>${item.text}</td>
+                <td>${item.state?"✔":"❌"}</td>
+                <td>delete</td>
+                </tr>
                 </c:forEach>
             </table>
 

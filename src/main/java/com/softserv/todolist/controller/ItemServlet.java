@@ -25,6 +25,7 @@ public class ItemServlet extends HttpServlet {
         HttpSession session = req.getSession();
         UserDto userDto = (UserDto) session.getAttribute("UserDto");
         List<Item> items = ItemDao.INSTANCE.getItemsByUserID(userDto.getUserId());
+        req.setAttribute("user", userDto);
         req.setAttribute("list", items);
 
 
