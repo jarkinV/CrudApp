@@ -19,7 +19,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="page-header">
-                <h1>Hello ${user.name} <small><a href="#"><span class="badge">edit</span></a></small></h1>
+                <h1>Hello ${user.name}</h1>
             </div>
 
         </div>
@@ -40,7 +40,7 @@
                 <tr>
                 <td>${item.text}</td>
                 <td>${item.state?"✔":"❌"}</td>
-                <td>delete</td>
+                <td>🔥</td>
                 </tr>
                 </c:forEach>
             </table>

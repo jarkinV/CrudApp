@@ -39,7 +39,7 @@
                         <td>${u.age}</td>
                         <td>${u.address}</td>
                         <td>${u.role}</td>
-                        <td>delete</td>
+                        <td>❌</td>
                     </tr>
                 </c:forEach>
             </table>

@@ -18,7 +18,7 @@ import java.util.List;
  * Created by jarki on 6/18/2017.
  */
 @WebServlet("/manage")
-public class Manage extends HttpServlet{
+public class ManageServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
