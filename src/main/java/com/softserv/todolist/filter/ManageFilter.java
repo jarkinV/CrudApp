@@ -24,16 +24,17 @@ public class ManageFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
-
         HttpSession session = req.getSession(false);
-
-        UserDto userDto = (UserDto) session.getAttribute("UserDto");
-        if(userDto.getRole().equals("Role_admin")){
-            filterChain.doFilter(req, resp);
-        }else {
+        if (session == null || session.getAttribute("UserDto") == null){
             resp.sendError(404);
+        }else {
+            UserDto userDto = (UserDto) session.getAttribute("UserDto");
+            if(userDto.getRole().equals("Role_admin")){
+                filterChain.doFilter(req, resp);
+            }else {
+                resp.sendError(404);
+            }
         }
-
     }
 
     @Override

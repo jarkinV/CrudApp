@@ -12,7 +12,7 @@ import java.util.List;
 public enum ItemDao {
     INSTANCE;
 
-    public int saveUser(Item item) {
+    public int saveItem(Item item) {
         PreparedStatement preparedStatement;
         Connection connection = DBConnection.getInstance().getConnection();
         String sql = "Insert into item (text, state, userID) values (" +
@@ -29,7 +29,7 @@ public enum ItemDao {
         return 0;
     }
 
-    public List<Item> getItemsByUserID(int userId){
+    public List<Item> getItemsByUserID(int userId) {
         List<Item> items = new ArrayList<>();
         PreparedStatement preparedStatement;
         Connection connection = DBConnection.getInstance().getConnection();
@@ -39,7 +39,7 @@ public enum ItemDao {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setInt(1, userId);
             ResultSet resultSet = preparedStatement.executeQuery();
-            while (resultSet.next()){
+            while (resultSet.next()) {
                 Item item = new Item();
                 item.setItemId(resultSet.getInt("itemId"));
                 item.setText(resultSet.getString("text"));
@@ -54,6 +54,19 @@ public enum ItemDao {
     }
 
 
-
+    public boolean removeItemById(int id) {
+        boolean result = false;
+        PreparedStatement preparedStatement;
+        Connection connection = DBConnection.getInstance().getConnection();
+        String sql = "DELETE FROM item WHERE itemID = ?";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+            result = preparedStatement.executeUpdate() > 0 ? true : false;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 
 }

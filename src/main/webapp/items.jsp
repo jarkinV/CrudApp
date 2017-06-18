@@ -19,7 +19,12 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="page-header">
-                <h1>Hello ${user.name}</h1>
+                <h1>Hello ${user.name}
+                    <button type="button" id="buttonAddItem" class="btn btn-primary btn-lg" data-toggle="modal"
+                            data-target="#myModal">
+                        Add Item
+                    </button>
+                </h1>
             </div>
 
         </div>
@@ -36,12 +41,15 @@
                     <th>Delete</th>
                 </tr>
 
-                <c:forEach items="${list}" var="item" >
-                <tr>
-                <td>${item.text}</td>
-                <td>${item.state?"✔":"❌"}</td>
-                <td>🔥</td>
-                </tr>
+                <c:forEach items="${list}" var="item">
+                    <tr>
+                        <form action="/removeItem" method="post">
+                            <input type="hidden" name="itemId" value="${item.itemId}">
+                            <td>${item.text}</td>
+                            <td>${item.state?"✔":"❌"}</td>
+                            <td><input type="submit" id="buttonId" value="🔥"></td>
+                        </form>
+                    </tr>
                 </c:forEach>
             </table>
 
@@ -49,5 +57,45 @@
     </div>
 </div>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">Add Item</h4>
+            </div>
+            <form action="/addItem" method="post" class="form-horizontal">
+                <div class="modal-body">
+
+
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="text">Text</label>
+                        <div class="col-sm-11">
+                            <input type="text" name="text" class="form-control" placeholder="Text" id="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" id="labelCheckbox" for="text">State</label>
+                        <div class="col-sm-11">
+                            <label class="labelDone">
+                                <input type="checkbox" value="check" name="check">
+                                Done!
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="<c:url value="resources/jquery-3.2.1.min.js" />"></script>
+<script type="text/javascript" src="<c:url value="resources/bootstrap.min.js" />"></script>
 </body>
 </html>
