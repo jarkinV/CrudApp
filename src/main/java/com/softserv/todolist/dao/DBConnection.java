@@ -10,18 +10,17 @@ public class DBConnection {
     private static final String USER = "root";
     private static final String PASS = "123456";
     private static DBConnection dbConnection;
+    private Connection connection = null;
 
     public static DBConnection getInstance() {
         if (dbConnection == null) {
             dbConnection = new DBConnection();
             return dbConnection;
         } else {
-            
+
             return dbConnection;
         }
     }
-
-    private Connection connection = null;
 
     private DBConnection() {
         try {
@@ -38,5 +37,4 @@ public class DBConnection {
     public Connection getConnection() {
         return connection;
     }
-
 }

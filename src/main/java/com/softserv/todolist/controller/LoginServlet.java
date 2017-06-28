@@ -1,4 +1,4 @@
-package com.softserv.todolist.controllet;
+package com.softserv.todolist.controller;
 
 import com.softserv.todolist.dao.UserDao;
 import com.softserv.todolist.dto.UserDto;
@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * Created by jarki on 6/17/2017.
  */
-@WebServlet(urlPatterns = "/login")
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -45,9 +45,11 @@ public class LoginServlet extends HttpServlet {
                 userDto.setName(user.getName());
                 userDto.setAge(user.getAge());
                 userDto.setAddress(user.getAddress());
+                userDto.setUserId(user.getUserId());
+                userDto.setRole(user.getRole());
+                userDto.setLogin(user.getLogin());
                 session.setAttribute("UserDto", userDto);
                 resp.sendRedirect("/user");
-//                req.getRequestDispatcher("/user").forward(req, resp);
 
             }
         }else {

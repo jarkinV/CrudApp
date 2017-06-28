@@ -8,6 +8,16 @@ public class User {
     private String address;
     private String password;
     private String login;
+    private String role;
+
+    public User(String name, int age, String address, String password, String login, String role) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+        this.password = password;
+        this.login = login;
+        this.role = role;
+    }
 
     public User(String name, int age, String address, String password, String login) {
         this.name = name;
@@ -68,6 +78,14 @@ public class User {
 
     public void setLogin(String login) {
         this.login = login;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 
     @Override

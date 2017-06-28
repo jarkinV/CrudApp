@@ -1,4 +1,4 @@
-package com.softserv.todolist.controllet;
+package com.softserv.todolist.controller;
 
 import com.softserv.todolist.dao.UserDao;
 import com.softserv.todolist.entity.User;
@@ -32,7 +32,7 @@ public class SignUpServlet extends HttpServlet {
             String password = req.getParameter("password");
             String login = req.getParameter("login");
             if ((name != "" || address != "" || password != "" || login != "")
-                    || !UserDao.INSTANCE.userValidate(login, password)) {
+                    && !UserDao.INSTANCE.userValidate(login, password)) {
                 User user = new User(name, age, address, password, login);
                 UserDao.INSTANCE.saveUser(user);
                 message = "Success!";

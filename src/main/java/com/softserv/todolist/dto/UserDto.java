@@ -2,17 +2,27 @@ package com.softserv.todolist.dto;
 
 
 public class UserDto {
+    private int userId;
     private String name;
+    private String login;
     private int age;
     private String address;
+    private String role;
 
-    public UserDto() {
+    public String getLogin() {
+        return login;
     }
 
-    public UserDto(String name, int age, String address) {
-        this.name = name;
-        this.age = age;
-        this.address = address;
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getName() {
@@ -37,5 +47,13 @@ public class UserDto {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }

@@ -22,15 +22,11 @@ public class LoginFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
-
         HttpSession session = req.getSession(false);
-
         if(session == null || session.getAttribute("UserDto") == null) {
             filterChain.doFilter(req, resp);
-
-
         } else {
-            resp.sendError(404);
+            resp.sendError(400);
         }
     }
 
