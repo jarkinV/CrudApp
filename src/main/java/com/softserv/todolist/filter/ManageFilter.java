@@ -26,13 +26,13 @@ public class ManageFilter implements Filter {
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
         HttpSession session = req.getSession(false);
         if (session == null || session.getAttribute("UserDto") == null){
-            resp.sendError(404);
+            resp.sendError(400);
         }else {
             UserDto userDto = (UserDto) session.getAttribute("UserDto");
             if(userDto.getRole().equals("Role_admin")){
                 filterChain.doFilter(req, resp);
             }else {
-                resp.sendError(404);
+                resp.sendError(400);
             }
         }
     }

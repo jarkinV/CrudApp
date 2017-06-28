@@ -12,7 +12,7 @@ public enum UserDao {
     public int saveUser(User user){
         PreparedStatement preparedStatement;
         Connection connection = DBConnection.getInstance().getConnection();
-        String sql = "Insert into user (name, age, address, password, login, role) values (" +
+        String sql = "Insert INTO user (name, age, address, password, login, role) values (" +
                 "?, ?, ?, ?, ?, ?)";
         try {
             preparedStatement = connection.prepareStatement(sql);
@@ -29,6 +29,17 @@ public enum UserDao {
         return 0;
     }
 
+    public void removeUserById(int id){
+        PreparedStatement preparedStatement;
+        Connection connection = DBConnection.getInstance().getConnection();
+        String sql = "DELETE FROM user WHERE userID = ?";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
     public User getUserById(int id) {
         User user = null;
         PreparedStatement preparedStatement;

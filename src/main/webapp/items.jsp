@@ -31,6 +31,7 @@
     </div>
 </div>
 <div class="container">
+
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <table class="table table-striped">
@@ -43,11 +44,15 @@
 
                 <c:forEach items="${list}" var="item">
                     <tr>
+                        <td>${item.text}</td>
+
+
+                        <td><button  class="itemState" data-itemId="${item.itemId}">${item.state?"✔":"❌"}</button></td>
+
+
                         <form action="/removeItem" method="post">
                             <input type="hidden" name="itemId" value="${item.itemId}">
-                            <td>${item.text}</td>
-                            <td>${item.state?"✔":"❌"}</td>
-                            <td><input type="submit" id="buttonId" value="🔥"></td>
+                            <td><input type="submit" class="buttonId" value="🔥"></td>
                         </form>
                     </tr>
                 </c:forEach>
@@ -97,5 +102,6 @@
 </div>
 <script type="text/javascript" src="<c:url value="resources/jquery-3.2.1.min.js" />"></script>
 <script type="text/javascript" src="<c:url value="resources/bootstrap.min.js" />"></script>
+<script type="text/javascript" src="<c:url value="resources/ajaxQueries.js" />"></script>
 </body>
 </html>

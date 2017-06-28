@@ -25,7 +25,7 @@ public class SignUpFilter implements Filter {
         if(session == null || session.getAttribute("UserDto") == null) {
             filterChain.doFilter(req, resp);
         } else {
-            resp.sendError(404);
+            resp.sendError(400);
         }
     }
 

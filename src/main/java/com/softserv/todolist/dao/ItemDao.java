@@ -29,6 +29,50 @@ public enum ItemDao {
         return 0;
     }
 
+    public Item getItemById(int id) {
+        Item item = new Item();
+        PreparedStatement preparedStatement;
+        Connection connection = DBConnection.getInstance().getConnection();
+        String sql = "SELECT * from item WHERE itemID = ?";
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+
+                item.setItemId(resultSet.getInt("itemId"));
+                item.setText(resultSet.getString("text"));
+                item.setState(resultSet.getInt("state") == 1);
+                item.setUserId(resultSet.getInt("userID"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return item;
+    }
+
+    public boolean changeState(int id, boolean state) {
+        int temp = 0;
+        PreparedStatement preparedStatement;
+        Connection connection = DBConnection.getInstance().getConnection();
+        String sql;
+        if (state) {
+            sql = "UPDATE item SET state ='0' WHERE itemID=?";
+        } else {
+            sql = "UPDATE item SET state ='1' WHERE itemID=?";
+        }
+        try {
+            preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+            temp = preparedStatement.executeUpdate();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return temp == 1 ? true : false;
+
+    }
+
     public List<Item> getItemsByUserID(int userId) {
         List<Item> items = new ArrayList<>();
         PreparedStatement preparedStatement;

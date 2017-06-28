@@ -16,7 +16,7 @@ import java.io.IOException;
 /**
  * Created by jarki on 6/17/2017.
  */
-@WebServlet(urlPatterns = "/login")
+@WebServlet("/login")
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

@@ -20,7 +20,7 @@ public class ItemFilter implements Filter {
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
         HttpSession session = req.getSession(false);
         if(session == null || session.getAttribute("UserDto") == null) {
-            resp.sendError(404);
+            resp.sendError(400);
         } else {
             filterChain.doFilter(req, resp);
         }

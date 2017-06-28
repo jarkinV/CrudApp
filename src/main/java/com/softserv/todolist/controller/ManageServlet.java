@@ -29,5 +29,8 @@ public class ManageServlet extends HttpServlet{
         RequestDispatcher dispatcher = req.getRequestDispatcher("/manage.jsp");
         dispatcher.forward(req, resp);
 
+
+
+
     }
 }

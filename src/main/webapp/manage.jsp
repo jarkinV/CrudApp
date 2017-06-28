@@ -31,7 +31,7 @@
                     <th>Delete</th>
                 </tr>
 
-                <c:forEach items="${users}" var="u" >
+                <c:forEach items="${users}" var="u">
                     <tr>
                         <td>${u.userId}</td>
                         <td>${u.login}</td>
@@ -39,7 +39,7 @@
                         <td>${u.age}</td>
                         <td>${u.address}</td>
                         <td>${u.role}</td>
-                        <td>❌</td>
+                        <td><button class="removeUser" data-userId="${u.userId}">❌</button></td>
                     </tr>
                 </c:forEach>
             </table>
@@ -47,6 +47,6 @@
         </div>
     </div>
 </div>
-
+<script type="text/javascript" src="<c:url value="resources/ajaxQueries.js" />"></script>
 </body>
 </html>
